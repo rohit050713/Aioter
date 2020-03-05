@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#191818</color>
+    <color name="colorAccent">#f47733</color>
+
+    <color name="colorDark">#252424</color>
+    <color name="colorLightDark">#252424</color>
+
+    <!-- Screens background color-->
+    <color name="colorBackground">#191818</color>
+
+    <!-- dots inactive colors -->
+    <color name="colorInactiveDot1">#191818</color>
+    <color name="colorInactiveDot2">#191818</color>
+    <color name="colorInactiveDot3">#191818</color>
+
+    <!-- dots active colors -->
+    <color name="colorActiveDot1">#F47733</color>
+    <color name="colorActiveDot2">#f47733</color>
+    <color name="colorActiveDot3">#f47733</color>
+    <color name="white">#ffffff</color>
+    <color name="active_bg">#191818</color>
+    <color name="inactive_bg">#282525</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorActiveDot1</item>
+        <item>@color/colorActiveDot2</item>
+        <item>@color/colorActiveDot3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/colorInactiveDot1</item>
+        <item>@color/colorInactiveDot2</item>
+        <item>@color/colorInactiveDot3</item>
+    </array>
+
+</resources>

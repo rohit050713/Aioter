@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#252424"
+    android:padding="@dimen/_12sdp"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/layer_20_copy"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDevicenme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Device Name" />
+
+        <TextView
+            android:id="@+id/tvDeviceserialnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Device Sr.Number" />
+        <TextView
+            android:id="@+id/tvSwitches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Switches- 4+1 dimmer" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_14sdp"
+        android:src="@drawable/next"
+        android:layout_gravity="center_vertical"
+        android:layout_height="@dimen/_16sdp" />
+
+</LinearLayout>

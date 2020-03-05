@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/linearbg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/layer_20_copy"
+            android:layout_gravity="center"
+            android:id="@+id/imglogo"
+            android:layout_marginLeft="@dimen/_18sdp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_weight="0.5"
+           android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stand Lamp"
+                android:id="@+id/devicetype"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#fff"
+
+                android:fontFamily="@font/baumans" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch 1"
+                android:textColor="#fff"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/baumans"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:baselineAligned="false"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:textColor="#fff"
+                android:textSize="@dimen/_1sdp"
+                android:thumb="@drawable/thumb_sw"
+                app:track="@drawable/sw_track">
+
+            </androidx.appcompat.widget.SwitchCompat>
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:progressTint="#f47733"
+                android:thumbTint="#f47733" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Running  12:25hr"
+                android:textColor="#fff"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

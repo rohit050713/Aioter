@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#191818"
+    tools:context=".LivingRoomFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:text="Device 1"
+            android:textColor="#fff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_wifi_black_24dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_power_settings_new_black_24dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room :"
+            android:fontFamily="@font/baumans"
+            android:id="@+id/tvroom1"
+            android:textColor="#fff"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvroom1"
+            android:layout_gravity="center"
+            android:id="@+id/tvroomtype"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="Living Room"
+            android:fontFamily="@font/baumans"
+            android:textColor="#fff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/tvroomtype" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin :"
+            android:id="@+id/tvpin"
+            android:textColor="#fff"
+            android:fontFamily="@font/baumans"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvpin"
+            android:layout_gravity="center"
+            android:id="@+id/tvpinenter"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:text="***********"
+            android:fontFamily="@font/baumans"
+            android:textColor="#fff"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toRightOf="@id/tvpinenter" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Running Status"
+        android:textColor="#fff"
+        android:fontFamily="@font/baumans"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="#252424"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview2"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"/>
+</LinearLayout>

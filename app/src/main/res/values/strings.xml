@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Aioter</string>
+
+    <string-array name="devicelist">
+        <item>Device1</item>
+        <item>Device2</item>
+        <item>Device3</item>
+        <item>Device4</item>
+        <item>Device5</item>
+        <item>Device6</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="slide1">Slide 1</string>
+    <string name="slide2">Slide 2</string>
+    <string name="slide3">Slide 3</string>
+    <string name="content_slide1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut rhoncus justo, vel tempor metus. Etiam nunc ex, lacinia non elit at, blandit sodales neque. Donec sed leo ac massa semper mattis id nec enim. Aliquam cursus magna a elit elementum. Vestibulum elit libero, placerat at fermentum ultricies, molestie a magna. Vestibulum egestas augue urna, in accumsan arcu tristique eget. Donec quis sodales massa, ac porta sapien. Nulla porta libero vitae sapien tincidunt volutpat nec laoreet urna.
+\n\n
+Nam at erat ut orci hendrerit volutpat. Vivamus vel justo lacinia, scelerisque elit ut, consequat neque. Aenean vehicula, ante eu dignissim interdum, risus lacus rutrum lacus, sed tempor metus enim sit amet mauris. Proin fringilla mollis enim, quis aliquam lacus auctor vitae. Sed sit amet ex ultricies, fringilla turpis vitae, mollis est. Nulla mattis tincidunt urna ut finibus. Curabitur finibus laoreet odio vitae luctus. Sed a facilisis mi. Mauris vitae elit nisi. Aliquam erat volutpat. Nam sit amet justo scelerisque, aliquam massa eu, condimentum sem. Phasellus facilisis viverra elementum. Duis consectetur enim et metus accumsan finibus.</string>
+    <string name="content_slide2">Lorem ipsum  adipiscing elit. Nam ut rhoncus justo, vel tempor metus. Etiam nunc ex, lacinia non elit at, blandit sodales neque. Donec sed leo ac massa semper mattis id nec enim. Aliquam cursus magna a elit elementum. Vestibulum elit libero, placerat at fermentum ultricies, molestie a magna. Vestibulum egestas augue urna, in accumsan arcu tristique eget. Donec quis sodales massa, ac porta sapien. Nulla porta libero vitae sapien tincidunt volutpat nec laoreet urna.
+\n\n
+Nam at erat ut orci hendrerit volutpat. Monsequat neque. Aenean vehicula, ante eu dignissim interdum, risus lacus rutrum lacus, sed tempor metus enim sit amet mauris. Proin fringilla mollis enim, quis aliquam lacus auctor vitae. Sed sit amet ex ultricies, fringilla turpis vitae, mollis est. Nulla mattis tincidunt urna ut finibus. Curabitur finibus laoreet odio vitae luctus. Sed a facilisis mi. Mauris vitae elit nisi. Aliquam erat volutpat. Nam sit amet justo scelerisque, aliquam massa eu, condimentum sem. Phasellus facilisis viverra elementum. Duis consectetur enim et metus accumsan finibus.</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+</resources>
