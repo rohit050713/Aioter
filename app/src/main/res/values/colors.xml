@@ -22,6 +22,9 @@
     <color name="white">#ffffff</color>
     <color name="active_bg">#191818</color>
     <color name="inactive_bg">#282525</color>
+    <color name="backgroundcolor">#191818</color>
+    <color name="tab_dark">#393737</color>
+    <color name="tab_light">#7a000000</color>
 
     <array name="array_dot_active">
         <item>@color/colorActiveDot1</item>

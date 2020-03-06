@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -285,7 +283,7 @@ public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
         binding.savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this,IndexActivity.class));
+                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this, HomeActivity.class));
             }
         });
     }
