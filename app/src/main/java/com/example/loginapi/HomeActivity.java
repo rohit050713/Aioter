@@ -1,27 +1,26 @@
 package com.example.loginapi;
 
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
 
-import androidx.annotation.NonNull;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.loginapi.databinding.ActivityHomeBinding;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class HomeActivity extends AppCompatActivity {
-    final Fragment fragment1 = new HomeFragment();
-    final Fragment fragment2 = new LivingRoomFragment();
-    final Fragment fragment3 = new HomeFragment();
-    final Fragment fragment4 = new LivingRoomFragment();
-    final Fragment fragment5 = new HomeFragment();
-    final FragmentManager fm = getSupportFragmentManager();
+
     ActivityHomeBinding binding;
-    Fragment active = fragment1;
+    FrameLayout simpleFrameLayout;
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,52 +28,72 @@ public class HomeActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home);
 
 
-        fm.beginTransaction().add(R.id.homeplaceholder, fragment5, "5").hide(fragment5).commit();
-        fm.beginTransaction().add(R.id.homeplaceholder, fragment4, "4").hide(fragment4).commit();
-        fm.beginTransaction().add(R.id.homeplaceholder, fragment3, "3").hide(fragment3).commit();
-        fm.beginTransaction().add(R.id.homeplaceholder, fragment2, "2").hide(fragment2).commit();
-        fm.beginTransaction().add(R.id.homeplaceholder, fragment1, "1").commit();
-        BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-                = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
+        Fragment fragment = new SwitchedOnFragment();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.simpleFrameLayout, fragment);
+        ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+        ft.commit();
+        simpleFrameLayout = (FrameLayout) findViewById(R.id.simpleFrameLayout);
+        tabLayout = (TabLayout) findViewById(R.id.simpleTabLayout);
+// Create a new Tab named "First"
+        final TabLayout.Tab firstTab = tabLayout.newTab();
+        firstTab.setText("Switched On"); // set the Text for the first Tab
+        firstTab.setIcon(R.drawable.switched_on_icon); // set an icon for the
+// first tab
+        tabLayout.addTab(firstTab); // add  the tab at in the TabLayout
+// Create a new Tab named "Second"
+        TabLayout.Tab secondTab = tabLayout.newTab();
+        secondTab.setText("Switched On"); // set the Text for the second Tab
+        secondTab.setIcon(R.drawable.switched_off_icon); // set an icon for the second tab
+        tabLayout.addTab(secondTab); // add  the tab  in the TabLayout
+// Create a new Tab named "Third"
+        TabLayout.Tab thirdTab = tabLayout.newTab();
+        thirdTab.setText("Unreachable");
+        thirdTab.setIcon(R.drawable.switched_unreachable_icon);
+        tabLayout.addTab(thirdTab);
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.homeuncolor:
-                        fm.beginTransaction().hide(active).show(fragment1).commit();
-                        active = fragment1;
-                        return true;
-
-                    case R.id.chairbottom:
-                        fm.beginTransaction().hide(active).show(fragment2).commit();
-                        active = fragment2;
-                        return true;
-
-                    case R.id.clock:
-                        fm.beginTransaction().hide(active).show(fragment3).commit();
-                        active = fragment2;
-                        return true;
-
-                    case R.id.wifi:
-                        fm.beginTransaction().hide(active).show(fragment4).commit();
-                        active = fragment2;
-                        return true;
-
-                    case R.id.setting:
-                        fm.beginTransaction().hide(active).show(fragment5).commit();
-                        active = fragment3;
-                        return true;
+            public void onTabSelected(TabLayout.Tab tab) {
+// get the current selected tab's position and replace the fragment accordingly
+                Fragment fragment = new SwitchedOnFragment();
+                switch (tab.getPosition()) {
+                    case 0:
+                        fragment = new SwitchedOnFragment();
+                        break;
+                    case 1:
+                        fragment = new SwitchOffFragment();
+                        break;
+                    case 2:
+                        fragment = new UnreachableFragment();
+                        break;
                 }
-                return false;
+                FragmentManager fm = getSupportFragmentManager();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.simpleFrameLayout, fragment);
+                ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                ft.commit();
             }
-        };
 
-        binding.homeuncolor.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
 
             }
         });
 
+
+        ImageView homeIcon = findViewById(R.id.wifi);
+        homeIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, DeviceHomeActivity.class));
+                finish();
+            }
+        });
     }
 }

@@ -1,15 +1,21 @@
 package com.example.loginapi;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.example.loginapi.databinding.ActivityDeviceSitchWithRoomBinding;
+
 
 public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
 
@@ -283,11 +289,10 @@ public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
         binding.savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this, HomeActivity.class));
+                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this, DeviceHomeActivity.class));
             }
         });
     }
-
 
 
 }

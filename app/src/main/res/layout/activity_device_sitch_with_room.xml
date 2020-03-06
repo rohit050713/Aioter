@@ -286,7 +286,7 @@
                     android:id="@+id/errorSwitch1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#CD2121"
+                    android:textColor="@color/colorAccent"
                     android:layout_gravity="end"
                     android:layout_marginRight="@dimen/_16sdp"
                     android:visibility="gone"
@@ -347,7 +347,8 @@
                     android:id="@+id/errorSwitch2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#CD2121"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorAccent"
                     android:visibility="gone" />
                 <TextView
                     android:layout_width="match_parent"
@@ -405,7 +406,8 @@
                     android:id="@+id/errorSwitch3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#CD2121"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorAccent"
                     android:visibility="gone" />
                 <TextView
                     android:layout_width="match_parent"
@@ -464,7 +466,8 @@
                     android:id="@+id/errorSwitch4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#CD2121"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorAccent"
                     android:visibility="gone" />
                 <TextView
                     android:layout_width="match_parent"
@@ -523,7 +526,8 @@
                     android:id="@+id/errorSwitch5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#CD2121"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorAccent"
                     android:visibility="gone" />
 
                 <Button

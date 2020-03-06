@@ -127,11 +127,11 @@ public class AddRoomActivity extends AppCompatActivity {
          input=binding.etRoomName.getText().toString().trim();
         if (input.length()<1){
             binding.errorName.setVisibility(View.VISIBLE);
-            binding.errorName.setText("Please enter room name.");
+            binding.errorName.setText("*Please enter room name.");
             return false;
         }else if (input.length()<2){
             binding.errorName.setVisibility(View.VISIBLE);
-            binding.errorName.setText("Please enter valid room name.");
+            binding.errorName.setText("*Please enter valid room name.");
 
             return false;
         }else {

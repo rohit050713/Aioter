@@ -12,11 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".IndexActivity" />
         <activity android:name=".DeviceSitchActivityWithRoomActivity" />
@@ -24,11 +19,16 @@
         <activity android:name=".AgreementPolicyActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".OnBoardingActivity" />
-        <activity android:name=".DeviceHomeActivity" />
+        <activity android:name=".DeviceHomeActivity" > </activity>
         <activity android:name=".DeviceSwitchActivity" />
         <activity android:name=".ScanDevices" />
         <activity android:name=".TutorialAcitivity" />
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

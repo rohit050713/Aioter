@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@mipmap/rectangle_1_copy_12"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemrunning"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:src="@mipmap/frznon"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemtyperunning"
+            android:layout_width="wrap_content"
+            android:text="Stand lamp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/bauhausregular"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/roomtyperunning"
+            android:layout_width="wrap_content"
+            android:text="Living room"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/bauhausregular"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/switchoff"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/off"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/seekbar"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Running"
+                android:textColor="@color/white"
+
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/bauhausregular"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:text="12:26 hr"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/bauhausregular"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
