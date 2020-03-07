@@ -22,19 +22,20 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical">
 
-                <TextView
+                <ImageView
                     android:id="@+id/backbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/back" />
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/back"
+                    android:padding="@dimen/_6sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:fontFamily="@font/baumans"
+                    android:fontFamily="@font/bauhausregular"
                     android:gravity="center"
                     android:text="Agreement Policy"
                     android:textColor="#fff"
@@ -59,9 +60,10 @@
                 android:layout_margin="@dimen/_1sdp"
                 android:layout_weight="1"
                 android:background="@color/active_bg"
-                android:fontFamily="@font/baumans"
-                android:gravity="center"
-                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/bauhausregular"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
                 android:text="@string/terms_condition"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold" />
@@ -73,59 +75,66 @@
                 android:layout_margin="@dimen/_1sdp"
                 android:layout_weight="1"
                 android:background="@color/inactive_bg"
-                android:fontFamily="@font/baumans"
-                android:gravity="center"
-                android:padding="@dimen/_8sdp"
+                android:fontFamily="@font/bauhausregular"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
                 android:text="Privacy Policy"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
 
         </LinearLayout>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_marginTop="@dimen/_4sdp"
-    android:layout_weight="1">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/_12sdp"
-        android:layout_marginRight="@dimen/_12sdp"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/contentTermsCodition"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/baumans"
-            android:text="@string/content_slide1"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_13sdp" />
 
-        <TextView
-            android:id="@+id/contentPrivacyPolicy"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone"
-            android:fontFamily="@font/baumans"
-            android:text="@string/content_slide2"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_13sdp" />
-    </LinearLayout>
-</ScrollView>
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contentTermsCodition"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bauhausregular"
+                    android:text="@string/content_slide1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/contentPrivacyPolicy"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/bauhausregular"
+                    android:text="@string/content_slide2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
         <CheckBox
             android:id="@+id/checkbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
             android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
             android:layout_marginRight="@dimen/_12sdp"
-            android:layout_marginBottom="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
             android:buttonTint="@color/white"
-            android:textSize="@dimen/_10sdp"
-            android:fontFamily="@font/baumans"
+            android:fontFamily="@font/bauhausregular"
             android:text="I agree to AIOTER Terms &amp; Coditions and Privacy policy"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
 
     </LinearLayout>
 </layout>

@@ -95,7 +95,7 @@ public class DeviceHomeActivity extends AppCompatActivity {
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DeviceHomeActivity.this, DeviceSitchActivityWithRoomActivity.class));
+                startActivity(new Intent(DeviceHomeActivity.this, DeviceSwitchActivityWithRoomActivity.class));
                 finish();
             }
         });

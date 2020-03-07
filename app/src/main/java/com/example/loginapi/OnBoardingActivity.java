@@ -34,6 +34,7 @@ CircleIndicator circleIndicator;
                         AgreementPolicyActivity.class);
 
                 startActivity(i);
+                finish();
             }
         });
     }

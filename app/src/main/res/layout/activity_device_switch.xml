@@ -16,11 +16,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
+            <ImageView
                 android:id="@+id/backbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:layout_gravity="center_vertical"
                 android:background="@drawable/back" />
 
             <TextView
@@ -28,9 +29,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:fontFamily="@font/baumans"
-                android:gravity="center"
-                android:text="Devices"
+                android:fontFamily="@font/bauhausregular"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="Device Name"
                 android:textColor="#fff"
                 android:textSize="20sp" />
 
@@ -52,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausbold"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Select Room"
                 android:textColor="#fff"
@@ -92,7 +94,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 1"
                             android:textColor="#f47733"
                             android:textSize="@dimen/_12ssp" />
@@ -117,7 +119,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 2"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -143,7 +145,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 3"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -169,7 +171,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 4"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -195,7 +197,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 5"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -221,7 +223,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 6"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -247,7 +249,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_5sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Room 7"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -260,7 +262,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausbold"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Add switch details"
                 android:textColor="#fff"
@@ -269,19 +271,19 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:fontFamily="@font/baumans"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="( 5 Switches )"
                 android:textColor="#fff"
-                android:textSize="@dimen/_10ssp" />
+                android:textSize="@dimen/_13ssp" />
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 1"
                 android:textColor="#fff"
@@ -320,6 +322,7 @@
                     android:maxLength="20"
                     android:paddingLeft="@dimen/_6sdp"
                     android:singleLine="true"
+                    android:fontFamily="@font/bauhausregular"
                     android:background="@drawable/custom_edittext_background"
                     android:hint="Switch item name"
                     android:textColor="#fff"
@@ -331,7 +334,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 2"
                 android:textColor="#fff"
@@ -368,6 +371,7 @@
                     android:layout_weight="1"
                     android:gravity="center_vertical|start"
                     android:maxLength="20"
+                    android:fontFamily="@font/bauhausregular"
                     android:paddingLeft="@dimen/_6sdp"
                     android:singleLine="true"
                     android:background="@drawable/custom_edittext_background"
@@ -381,7 +385,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 3"
                 android:textColor="#fff"
@@ -419,6 +423,7 @@
                     android:gravity="center_vertical|start"
                     android:maxLength="20"
                     android:paddingLeft="@dimen/_6sdp"
+                    android:fontFamily="@font/bauhausregular"
                     android:singleLine="true"
                     android:background="@drawable/custom_edittext_background"
                     android:hint="Switch item name"
@@ -431,7 +436,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 4"
                 android:textColor="#fff"
@@ -470,6 +475,7 @@
                     android:maxLength="20"
                     android:paddingLeft="@dimen/_6sdp"
                     android:singleLine="true"
+                    android:fontFamily="@font/bauhausregular"
                     android:background="@drawable/custom_edittext_background"
                     android:hint="Switch item name"
                     android:textColor="#fff"
@@ -481,7 +487,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 5"
                 android:textColor="#fff"
@@ -520,6 +526,7 @@
                     android:maxLength="20"
                     android:paddingLeft="@dimen/_6sdp"
                     android:singleLine="true"
+                    android:fontFamily="@font/bauhausregular"
                     android:background="@drawable/custom_edittext_background"
                     android:hint="Switch item name"
                     android:textColor="#fff"
@@ -531,7 +538,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:paddingLeft="@dimen/_12sdp"
                 android:text="Switch 6"
                 android:textColor="#fff"
@@ -573,6 +580,7 @@
                     android:background="@drawable/custom_edittext_background"
                     android:hint="Switch item name"
                     android:textColor="#fff"
+                    android:fontFamily="@font/bauhausregular"
                     android:textColorHint="#797878" />
 
             </LinearLayout>
@@ -585,7 +593,7 @@
                 android:layout_marginTop="@dimen/_28sdp"
                 android:layout_marginRight="@dimen/_24sdp"
                 android:background="@drawable/white_button"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:text="Save"
                 android:layout_marginBottom="@dimen/_48sdp"
                 android:textColor="#000000"

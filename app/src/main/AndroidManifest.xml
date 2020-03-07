@@ -13,8 +13,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity">
         </activity>
-        <activity android:name=".IndexActivity" />
-        <activity android:name=".DeviceSitchActivityWithRoomActivity" />
+        <activity android:name=".DeviceSwitchActivityWithRoomActivity" />
         <activity android:name=".AddRoomActivity" />
         <activity android:name=".AgreementPolicyActivity" />
         <activity android:name=".LoginActivity" />

@@ -1,25 +1,20 @@
 package com.example.loginapi;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.example.loginapi.databinding.ActivityDeviceSitchWithRoomBinding;
+import com.example.loginapi.databinding.ActivityDeviceSwitchWithRoomBinding;
 
 
-public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
+public class DeviceSwitchActivityWithRoomActivity extends AppCompatActivity {
 
-    ActivityDeviceSitchWithRoomBinding binding;
+    ActivityDeviceSwitchWithRoomBinding binding;
 
     int whichIconSelected;
     String RoomName;
@@ -27,7 +22,7 @@ public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_device_sitch_with_room);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_device_switch_with_room);
 //        Bundle bundle = getIntent().getExtras();
 //        if (bundle.containsKey(AddRoomActivity.input)) {
 //             RoomName = bundle.getString("RoomName");
@@ -280,7 +275,7 @@ public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
         binding.backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this, ScanDevices.class));
+                startActivity(new Intent(DeviceSwitchActivityWithRoomActivity.this, ScanDevices.class));
                 finish();
             }
         });
@@ -289,7 +284,8 @@ public class DeviceSitchActivityWithRoomActivity extends AppCompatActivity {
         binding.savebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(DeviceSitchActivityWithRoomActivity.this, DeviceHomeActivity.class));
+                startActivity(new Intent(DeviceSwitchActivityWithRoomActivity.this, DeviceHomeActivity.class));
+                finish();
             }
         });
     }

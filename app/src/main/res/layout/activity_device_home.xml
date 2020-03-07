@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><layout>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#191818"
@@ -16,16 +16,18 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_12sdp"
             android:gravity="center_vertical">
 
-            <TextView
+            <ImageView
                 android:id="@+id/backbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_4sdp"
                 android:background="@drawable/back" />
 
             <TextView
@@ -33,16 +35,15 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:fontFamily="@font/baumans"
-                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/bauhausbold"
                 android:paddingRight="@dimen/_16sdp"
                 android:text="Devices"
                 android:textColor="#fff"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="20sp" />
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -60,7 +61,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#000">
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Duo"
                             android:textColor="#f47733"
                             android:textSize="@dimen/_12ssp" />
@@ -96,7 +96,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Living room"
                             android:textColor="#f47733"
                             android:textSize="@dimen/_10ssp" />
@@ -122,7 +122,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Quad"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -130,7 +130,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Bedroom"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_10ssp" />
@@ -157,7 +157,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Smart Plug(5A)"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_11ssp" />
@@ -165,10 +165,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Diningroom"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_10ssp" />
+
 
                     </LinearLayout>
 
@@ -192,15 +193,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Four+1"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Kitchen"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_10ssp" />
@@ -212,12 +212,10 @@
                         android:layout_height="@dimen/_60sdp"
                         android:layout_marginStart="2dp"
                         android:background="#282525"
-
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/room_icon_five_white_png" />
@@ -227,7 +225,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/_2sdp"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="New"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_12ssp" />
@@ -235,7 +233,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/baumans"
+                            android:fontFamily="@font/bauhausregular"
                             android:text="Studyroom"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_10ssp" />
@@ -304,8 +302,10 @@
 
                 <ImageView
                     android:id="@+id/editRoom"
-                    android:layout_width="@dimen/_12sdp"
-                    android:layout_height="@dimen/_12sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:scaleType="centerCrop"
                     android:layout_marginStart="8dp"
                     android:src="@drawable/ic_edit_black_24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/roomName"
@@ -339,8 +339,10 @@
 
                 <ImageView
                     android:id="@+id/editPin"
-                    android:layout_width="@dimen/_12sdp"
-                    android:layout_height="@dimen/_12sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:scaleType="centerCrop"
                     android:layout_marginStart="8dp"
                     android:src="@drawable/ic_edit_black_24dp"
                     app:layout_constraintBottom_toBottomOf="@+id/pinName"
@@ -354,13 +356,14 @@
                     android:layout_height="@dimen/_20sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:src="@android:drawable/ic_dialog_dialer" />
+                    android:src="@drawable/ic_more_vert_white_24dp" />
 
                 <ImageView
                     android:id="@+id/powerBtn"
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_marginEnd="4dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/ic_power_settings_new_black_24dp"
                     app:layout_constraintEnd_toStartOf="@+id/moreOption"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -370,7 +373,7 @@
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_marginEnd="4dp"
-                    android:src="@drawable/ic_wifi_black_24dp"
+                    android:src="@drawable/ic_wifi_24dp"
                     app:layout_constraintEnd_toStartOf="@+id/powerBtn"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -470,7 +473,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/baumans"
+                        android:fontFamily="@font/bauhausregular"
                         android:gravity="center"
                         android:text="Home"
                         android:textColor="@color/white"
@@ -500,7 +503,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/baumans"
+                        android:fontFamily="@font/bauhausregular"
                         android:gravity="center"
                         android:text="Room"
                         android:textColor="@color/white"
@@ -529,7 +532,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/baumans"
+                        android:fontFamily="@font/bauhausregular"
                         android:gravity="center"
                         android:text="Scene"
                         android:textColor="@color/white"
@@ -557,7 +560,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/baumans"
+                        android:fontFamily="@font/bauhausregular"
                         android:gravity="center"
                         android:text="Device"
                         android:textColor="@color/white"
@@ -586,7 +589,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:fontFamily="@font/baumans"
+                        android:fontFamily="@font/bauhausregular"
                         android:gravity="center"
                         android:text="Settings"
                         android:textColor="@color/white"

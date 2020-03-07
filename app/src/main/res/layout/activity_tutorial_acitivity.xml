@@ -22,7 +22,7 @@
         android:background="@drawable/rectangle_647"
         android:layout_marginTop="80dp"
         android:text="Scan Device"
-        android:fontFamily="@font/baumans"
+        android:fontFamily="@font/bauhausregular"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textFontWeight="200"
@@ -35,7 +35,7 @@
         android:background="@drawable/rectangle_647"
         android:text="Create Home"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/baumans"
+        android:fontFamily="@font/bauhausregular"
         android:textColor="#fff"
         android:textFontWeight="200"
         android:layout_gravity="center"/>

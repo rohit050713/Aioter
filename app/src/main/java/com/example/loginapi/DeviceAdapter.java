@@ -12,8 +12,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.w3c.dom.Text;
-
 public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.DeviceViewHolder> {
 
      Dialog myDialog;
@@ -35,7 +33,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.DeviceView
 
           DeviceViewHolder dholder = new DeviceViewHolder(view);
           myDialog = new Dialog(mContext);
-          myDialog.setContentView(R.layout.alertdialog);
+          myDialog.setContentView(R.layout.dialog_device_item_login);
           dholder.contact_item.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {

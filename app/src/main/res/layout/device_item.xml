@@ -3,9 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#252424"
-    android:padding="@dimen/_12sdp"
-    android:layout_marginTop="@dimen/_16sdp"
+    android:background="@drawable/device_item_bg"
+    android:paddingStart="@dimen/_16sdp"
+    android:paddingEnd="@dimen/_16sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_4sdp"
     android:orientation="horizontal">
 
     <ImageView
@@ -19,7 +22,7 @@
         android:id="@+id/text_container"
         android:layout_width="0dp"
         android:layout_weight="1"
-        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginLeft="@dimen/_26sdp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -27,6 +30,7 @@
             android:id="@+id/tvDevicenme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bauhausregular"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -36,12 +40,14 @@
             android:id="@+id/tvDeviceserialnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bauhausregular"
             android:textColor="@android:color/white"
             android:text="Device Sr.Number" />
         <TextView
             android:id="@+id/tvSwitches"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/bauhausregular"
             android:textColor="@android:color/white"
             android:text="Switches- 4+1 dimmer" />
 

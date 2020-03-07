@@ -24,24 +24,25 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical">
 
-                <TextView
+                <ImageView
                     android:id="@+id/backbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_4sdp"
                     android:background="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_16sdp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/baumans"
+                    android:fontFamily="@font/bauhausregular"
                     android:gravity="center"
                     android:text="Add Room"
                     android:textColor="#fff"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp" />
 
 
             </LinearLayout>
@@ -59,8 +60,8 @@
                 android:layout_height="wrap_content"
                 android:text="Select icon for room"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/bauhausregular"
+                android:textSize="@dimen/_14sdp"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -127,6 +128,7 @@
                 android:layout_marginTop="@dimen/_16sdp"
                 android:text="Name your room"
                 android:textColor="@color/white"
+                android:fontFamily="@font/bauhausregular"
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
 
@@ -136,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/custom_edittext_background"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:inputType="textPersonName"
                 android:maxLength="16"
                 android:padding="@dimen/_8sdp"
@@ -149,6 +151,7 @@
                 android:id="@+id/errorName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/bauhausregular"
                 android:textColor="@color/colorAccent"
                 android:visibility="gone" />
 
@@ -156,13 +159,12 @@
                 android:id="@+id/savebutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/_23sdp"
                 android:layout_marginTop="@dimen/_60sdp"
                 android:layout_marginRight="@dimen/_24sdp"
                 android:layout_marginBottom="@dimen/_48sdp"
                 android:background="@drawable/white_button"
-                android:fontFamily="@font/baumans"
+                android:fontFamily="@font/bauhausregular"
                 android:text="Save"
                 android:textColor="#000000"
                 android:textSize="@dimen/_14ssp" />
