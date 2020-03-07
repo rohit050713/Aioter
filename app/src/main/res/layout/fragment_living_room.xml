@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="#191818"
-    tools:context=".LivingRoomFragment">
+    tools:context=".fragments.LivingRoomFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

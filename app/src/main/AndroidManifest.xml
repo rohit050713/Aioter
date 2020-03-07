@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.loginapi">
-
-    <uses-permission android:name="android.permission.INTERNET" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aioter">
 
     <application
         android:allowBackup="true"
@@ -11,24 +10,80 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
-        </activity>
-        <activity android:name=".DeviceSwitchActivityWithRoomActivity" />
-        <activity android:name=".AddRoomActivity" />
-        <activity android:name=".AgreementPolicyActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".OnBoardingActivity" />
-        <activity android:name=".DeviceHomeActivity" > </activity>
-        <activity android:name=".DeviceSwitchActivity" />
-        <activity android:name=".ScanDevices" />
-        <activity android:name=".TutorialAcitivity" />
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.DeviceSwitchRoomActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.AddRoomActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.AgreementPolicyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.OnBoardingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.DeviceHomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.DeviceSwitchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.ScanDevices"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.TutorialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

@@ -9,7 +9,7 @@
         android:background="@color/colorBackground"
         android:orientation="vertical"
 
-        tools:context=".AddRoomActivity">
+        tools:context=".activity.AddRoomActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -29,8 +29,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:padding="@dimen/_4sdp"
-                    android:background="@drawable/back" />
+                    android:background="@drawable/back"
+                    android:padding="@dimen/_4sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -58,10 +58,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/bauhausregular"
                 android:text="Select icon for room"
                 android:textColor="@color/white"
-                android:fontFamily="@font/bauhausregular"
-                android:textSize="@dimen/_14sdp"/>
+                android:textSize="@dimen/_14sdp" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -126,9 +126,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/bauhausregular"
                 android:text="Name your room"
                 android:textColor="@color/white"
-                android:fontFamily="@font/bauhausregular"
                 android:textSize="@dimen/_14sdp"
                 android:textStyle="bold" />
 

@@ -1,2 +1,2 @@
+rootProject.name='Aioter'
 include ':app'
-rootProject.name='LoginApi'

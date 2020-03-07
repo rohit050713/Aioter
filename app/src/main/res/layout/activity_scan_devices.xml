@@ -9,7 +9,7 @@
         android:background="@color/colorBackground"
         android:orientation="vertical"
 
-        tools:context=".ScanDevices">
+        tools:context=".activity.ScanDevices">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"

@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:background="#191818"
         android:orientation="vertical"
-        tools:context=".HomeActivity">
+        tools:context=".activity.HomeActivity">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolhome"
