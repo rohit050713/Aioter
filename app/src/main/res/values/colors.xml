@@ -25,6 +25,8 @@
     <color name="backgroundcolor">#191818</color>
     <color name="tab_dark">#393737</color>
     <color name="tab_light">#7a000000</color>
+    <color name="dialog_header">#282525</color>
+    <color name="dialog_bg">#393737</color>
 
     <array name="array_dot_active">
         <item>@color/colorActiveDot1</item>

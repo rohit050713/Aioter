@@ -10,67 +10,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".activity.HomeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.DeviceSwitchRoomActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.AddRoomActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.AgreementPolicyActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.OnBoardingActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.DeviceHomeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.DeviceSwitchActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.ScanDevices"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.TutorialActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
             tools:ignore="LockedOrientationActivity" />
-
         <activity
             android:name=".activity.MainActivity"
             android:screenOrientation="portrait"
@@ -82,8 +71,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
 
 </manifest>

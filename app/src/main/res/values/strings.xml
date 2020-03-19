@@ -24,4 +24,17 @@ Nam at erat ut orci hendrerit volutpat. Vivamus vel justo lacinia, scelerisque e
 Nam at erat ut orci hendrerit volutpat. Monsequat neque. Aenean vehicula, ante eu dignissim interdum, risus lacus rutrum lacus, sed tempor metus enim sit amet mauris. Proin fringilla mollis enim, quis aliquam lacus auctor vitae. Sed sit amet ex ultricies, fringilla turpis vitae, mollis est. Nulla mattis tincidunt urna ut finibus. Curabitur finibus laoreet odio vitae luctus. Sed a facilisis mi. Mauris vitae elit nisi. Aliquam erat volutpat. Nam sit amet justo scelerisque, aliquam massa eu, condimentum sem. Phasellus facilisis viverra elementum. Duis consectetur enim et metus accumsan finibus.</string>
     <string name="skip"><u>Skip</u></string>
     <string name="terms_condition">Terms &amp; Conditions</string>
+
+    //logout dialog
+    <string name="logout">Logout</string>
+    <string name="logout_content">Are you sure you want to logout?</string>
+    <string name="logout_btn1">Yes</string>
+    <string name="logout_btn2">No</string>
+
+    //device off dialog
+    <string name="deviceoff">Device Off</string>
+    <string name="deviceoff_content">Are you sure you want to switch off the device?</string>
+    <string name="deviceoff_btn1">Yes</string>
+    <string name="deviceoff_btn2">No</string>
+
 </resources>
