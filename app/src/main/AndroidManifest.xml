@@ -10,6 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.myprofile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan"
+            tools:ignore="LockedOrientationActivity"></activity>
         <activity
             android:name=".activity.HomeActivity"
             android:screenOrientation="portrait"

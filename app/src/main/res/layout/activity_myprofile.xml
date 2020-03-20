@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/myprofile_bg"
+    android:orientation="vertical"
+    tools:context=".activity.myprofile">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myprofile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/myprofile_toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_120sdp"
+          >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/myprofile"
+               android:textColor="@color/colorPrimary"
+               android:fontFamily="@font/bauhausregular"
+               android:textSize="@dimen/_20ssp"
+               android:gravity="center_horizontal"
+               android:layout_gravity="center"
+               />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/_15sdp"
+
+                >
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logout"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="end"
+     android:layout_margin="@dimen/_10sdp">
+    <RelativeLayout
+     android:layout_width="@dimen/_35sdp"
+     android:layout_height="@dimen/_28sdp"
+     android:background="@drawable/myprofile_edit_bg"
+     >
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="@dimen/_5sdp"
+      android:src="@drawable/editor_pen"
+
+     />
+ </RelativeLayout>
+ </LinearLayout>
+
+   <FrameLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       >
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_width="@dimen/_100sdp"
+               android:layout_height="@dimen/_100sdp"
+               android:src="@drawable/girl"
+               app:civ_border_color="@android:color/darker_gray"
+               app:civ_border_width="@dimen/_1sdp"
+               />
+<ImageView
+    android:layout_width="@dimen/_24sdp"
+    android:layout_height="@dimen/_24sdp"
+    android:src="@drawable/camera"
+    android:background="@drawable/camera_bg"
+    android:padding="@dimen/_5sdp"
+    android:layout_gravity="right|bottom"
+    android:layout_marginBottom="@dimen/_5sdp"
+    />
+   </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/bauhausregular"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/manage"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/myprofile_toolbar"
+        android:paddingLeft="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/bauhausregular"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_5sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myprofile_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        />
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/add_icon"
+        android:layout_marginLeft="@dimen/_27sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+    <Button
+        android:id="@+id/btn_myprofile_save"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_btn"
+        android:fontFamily="@font/bauhausregular"
+        android:layout_gravity="center"
+        android:background="@drawable/white_button"
+        android:textSize="@dimen/_15ssp"/>
+
+
+</LinearLayout>
+</layout>

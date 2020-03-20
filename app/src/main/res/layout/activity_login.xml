@@ -55,6 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
+            android:onClick="google"
             android:id="@+id/googleImageButton"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
@@ -62,6 +63,7 @@
             android:layout_marginRight="18dp"/>
 
         <ImageView
+            android:onClick="submit"
             android:id="@+id/amazonImageButton"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"

@@ -27,7 +27,7 @@ Nam at erat ut orci hendrerit volutpat. Monsequat neque. Aenean vehicula, ante e
 
     //logout dialog
     <string name="logout">Logout</string>
-    <string name="logout_content">Are you sure you want to logout?</string>
+    <string name="logout_content">"Are you sure you want to \n logout?"</string>
     <string name="logout_btn1">Yes</string>
     <string name="logout_btn2">No</string>
 
@@ -36,5 +36,73 @@ Nam at erat ut orci hendrerit volutpat. Monsequat neque. Aenean vehicula, ante e
     <string name="deviceoff_content">Are you sure you want to switch off the device?</string>
     <string name="deviceoff_btn1">Yes</string>
     <string name="deviceoff_btn2">No</string>
+
+    //share dialog
+    <string name="share_header">Successfully Shared !</string>
+    <string name="share_content">"You have shared (Home name)/(Device name) successfully with (email address) \n till (20/03/2020)."</string>
+    <string name="share_button">Okay</string>
+
+    //sharewith dialog
+    <string name="sharewith_header">Share Device With</string>
+    <string name="sharewith_details">Please enter user details-</string>
+    <string name="sharewith_valid">Valid till-</string>
+    <string name="sharewith_assign">Assign role-</string>
+    <string name="sharewith_assign_data1">Guest role</string>
+    <string name="sharewith_assign_data2">User role</string>
+    <string name="sharewith_assign_data3">Admin role</string>
+    <string name="sharewith_btn1">Cancel</string>
+    <string name="sharewith_btn2">Share</string>
+    <string name="sharewith_email">Email adress</string>
+    <string name="sharewith_date">dd/mm/yyyy</string>
+
+    //deleteroom dialog
+    <string name="deleteroom_header">Delete Room</string>
+    <string name="deleteroom_content">"Are you sure you want to delete (Room name)?"</string>
+
+   //deleteswitch dialog
+    <string name="deleteswitch_header">Delete Room</string>
+    <string name="deleteswitch_content">"Are you sure you want to delete (Switch name)?"</string>
+
+   //wifisetting dialog
+    <string name="wifisetting_header">Wifi Setting</string>
+    <string name="wifisetting_content">Please go to your device wifi setting to change it.</string>
+
+    //user_authentication dialog
+    <string name="user_header">User Verification</string>
+    <string name="user_content">"Please enter your email adress here.\n We will send you a link to set your \n pin."</string>
+    <string name="enter_email">Enter email address</string>
+    <string name="pin_proceed">Proceed</string>
+    <string name="email_validation">*Please enter a valid email address.</string>
+
+    //delete_device dialog
+    <string name="deletedevice_header">Delete Device</string>
+    <string name="deletedevice_content">"Are you sure you want to delete (Device name)?"</string>
+
+    //restore device dialog
+    <string name="restoredevice_header">Restore Device</string>
+
+    //pin_authentication dialog
+    <string name="pin_header">Pin Authentication</string>
+    <string name="pin_content">"Please enter your device pin to change the settings of your device."</string>
+    <string name="forgot_pin"><u>Forgot Pin?</u></string>
+    <string name="device_pin">Enter device pin</string>
+    <string name="pin_validation">*Please enter a valid device pin.</string>
+
+
+    //myprofile activity
+    <string name="myprofile">My Profile</string>
+    <string name="email">Deepa@gmail.com</string>
+    <string name="manage">Manage People</string>
+    <string name="save_btn">Save</string>
+
+
+
+    <string-array name="myprofile_name">
+        <item>Raj</item>
+        <item>Rohit</item>
+        <item>Rahul</item>
+
+    </string-array>
+
 
 </resources>

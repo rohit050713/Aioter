@@ -27,6 +27,10 @@
     <color name="tab_light">#7a000000</color>
     <color name="dialog_header">#282525</color>
     <color name="dialog_bg">#393737</color>
+    <color name="myprofile_toolbar">#252424</color>
+    <color name="myprofile_bg">#191818</color>
+     <color name="selected">#f47733</color>
+
 
     <array name="array_dot_active">
         <item>@color/colorActiveDot1</item>
