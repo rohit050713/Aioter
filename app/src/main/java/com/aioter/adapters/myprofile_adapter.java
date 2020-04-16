@@ -12,13 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.aioter.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class myprofile_adapter extends RecyclerView.Adapter<myprofile_adapter.MyViewHolder>{
     private Context context;
-    private List list;
+    private List<myprofile_model> list=new ArrayList<>();
 
-    public myprofile_adapter(Context context, List list) {
+    public myprofile_adapter(Context context, List<myprofile_model> list) {
         this.context = context;
         this.list = list;
     }
@@ -47,7 +48,7 @@ public class myprofile_adapter extends RecyclerView.Adapter<myprofile_adapter.My
 
     @Override
     public int getItemCount() {
-        return 3;
+        return list.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{

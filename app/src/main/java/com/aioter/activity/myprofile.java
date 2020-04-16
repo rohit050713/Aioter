@@ -29,7 +29,7 @@ public class myprofile extends AppCompatActivity {
 
     public RecyclerView recyclerView;
     public myprofile_adapter myprofile_adapter;
-    public List list;
+    public List<myprofile_model> list;
     ActivityMyprofileBinding binding;
 
     public int image[]={R.drawable.delete_icon,R.drawable.delete_icon,R.drawable.delete_icon};
@@ -40,6 +40,8 @@ public class myprofile extends AppCompatActivity {
        binding= DataBindingUtil.setContentView(this,R.layout.activity_myprofile);
         Toolbar myprofile_toolbar= findViewById(R.id.myprofile_toolbar);
         setSupportActionBar(myprofile_toolbar);
+        recyclerView=findViewById(R.id.myprofile_recycler);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list=new ArrayList<>();
 
         for(int i=0;i<image.length;i++) {
@@ -49,12 +51,12 @@ public class myprofile extends AppCompatActivity {
 
 }
 
-        recyclerView=findViewById(R.id.myprofile_recycler);
+
 
         myprofile_adapter =new myprofile_adapter(this,list);
 
         recyclerView.setAdapter(myprofile_adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
 
         binding.ivLogout.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -144,7 +144,7 @@ public class DeviceHomeActivity extends AppCompatActivity {
         final TextView errorpineditnew = dialog.findViewById(R.id.errorpinnew);
         final TextView errorpineditconfirm = dialog.findViewById(R.id.errorpinconfirm);
 
-        ImageView dialogCloseButton = dialog.findViewById(R.id.changepincross);
+        ImageView dialogCloseButton = dialog.findViewById(R.id.change_pin_close);
         // if button is clicked, close the custom dialog
         dialogCloseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -249,7 +249,7 @@ public class DeviceHomeActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_successfully_changed_pin);
         dialog.setCancelable(false);
 
-        ImageView cross = (ImageView) dialog.findViewById(R.id.changepinsucesscross);
+        ImageView cross = (ImageView) dialog.findViewById(R.id.successfully_changed_pin_close);
         // if button is clicked, close the custom dialog
         cross.setOnClickListener(new View.OnClickListener() {
             @Override

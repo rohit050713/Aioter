@@ -39,10 +39,10 @@ public class LoginActivity extends AppCompatActivity {
 
 public void google(View view){
     final Dialog dialog=new Dialog(LoginActivity.this);
-    dialog.setContentView(R.layout.dialog_pin_authentication);
+    dialog.setContentView(R.layout.dialog_user_authentication);
     dialog.setCancelable(false);
 
-    ImageView imageView1= dialog.findViewById(R.id.ivClose);
+    ImageView imageView1= dialog.findViewById(R.id.user_authentication_close);
     imageView1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {

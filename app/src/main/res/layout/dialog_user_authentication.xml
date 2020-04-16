@@ -3,6 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center">
+    <FrameLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_20sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
             android:fontFamily="@font/bauhausregular"
             android:gravity="center"
             android:text="@string/user_content"
@@ -63,13 +69,14 @@
             android:textColor="@color/selected"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_40sdp"
             android:orientation="horizontal"
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_15sdp"
+
             android:layout_marginBottom="@dimen/_30sdp"
 
             >
@@ -77,11 +84,11 @@
                 android:id="@+id/btn_user_cancel"
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:background="@color/dialog_header"
+                android:background="@drawable/button_bg"
                 android:text="@string/sharewith_btn1"
                 android:layout_gravity="center"
                 android:fontFamily="@font/baumans"
-
+android:layout_weight="1"
                 android:gravity="center"
                 android:padding="@dimen/_5sdp"
                 android:textAllCaps="false"
@@ -96,10 +103,10 @@
 
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:background="@color/dialog_header"
+                android:background="@drawable/button_bg"
                 android:text="@string/pin_proceed"
                 android:layout_gravity="end"
-
+android:layout_weight="1"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"
                 android:padding="@dimen/_5sdp"
@@ -116,10 +123,11 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/ivClose"
+        android:id="@+id/user_authentication_close"
         android:layout_width="@dimen/_26sdp"
         android:layout_height="@dimen/_26sdp"
         android:layout_gravity="right|top"
         android:layout_margin="@dimen/_8sdp"
         android:src="@drawable/invalid_name" />
+    </FrameLayout>
 </FrameLayout>

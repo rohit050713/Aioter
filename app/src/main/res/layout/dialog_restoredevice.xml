@@ -4,6 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +39,7 @@
             android:layout_marginBottom="@dimen/_20sdp"
             android:fontFamily="@font/bauhausregular"
             android:gravity="center"
-            android:text="@string/deletedevice_content"
+            android:text="@string/restoredevice_content"
             android:padding="@dimen/_12sdp"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/_15ssp" />
@@ -56,7 +60,7 @@
                 android:id="@+id/btn_deletedevice_yes"
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:background="@color/dialog_header"
+                android:background="@drawable/button_bg"
                 android:text="@string/logout_btn1"
                 android:layout_gravity="center"
                 android:fontFamily="@font/baumans"
@@ -75,7 +79,7 @@
 
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
-                android:background="@color/dialog_header"
+                android:background="@drawable/button_bg"
                 android:text="@string/logout_btn2"
                 android:layout_gravity="end"
 
@@ -95,11 +99,11 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/ivClose"
+        android:id="@+id/restore_device_close"
         android:layout_width="@dimen/_26sdp"
         android:layout_height="@dimen/_26sdp"
         android:layout_gravity="right|top"
         android:layout_margin="@dimen/_8sdp"
         android:src="@drawable/invalid_name" />
-
+</FrameLayout>
 </FrameLayout>

@@ -59,7 +59,7 @@
                     android:id="@+id/btn_logout_yes"
                     android:layout_width="@dimen/_95sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="@color/dialog_header"
+                    android:background="@drawable/button_bg"
                     android:text="@string/logout_btn1"
                     android:layout_gravity="center"
                     android:fontFamily="@font/baumans"
@@ -78,7 +78,7 @@
 
                     android:layout_width="@dimen/_95sdp"
                     android:layout_height="@dimen/_40sdp"
-                    android:background="@color/dialog_header"
+                    android:background="@drawable/button_bg"
                     android:text="@string/logout_btn2"
                     android:layout_gravity="end"
 

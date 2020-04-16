@@ -111,7 +111,7 @@ public class ScanDevices extends AppCompatActivity {
 
     private void dialog() {
         final Dialog dialog = new Dialog(ScanDevices.this);
-        dialog.setContentView(R.layout.dialog_device_item_login);
+        dialog.setContentView(R.layout.dialog_devicepin_screen);
         dialog.setCancelable(false);
         final TextView errortvPin = dialog.findViewById(R.id.errortvDevicePin);
 
@@ -154,7 +154,7 @@ public class ScanDevices extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
             }
         });
-        ImageView dialogCloseButton = dialog.findViewById(R.id.ivClose);
+        ImageView dialogCloseButton = dialog.findViewById(R.id.device_pin_close);
         // if button is clicked, close the custom dialog
         dialogCloseButton.setOnClickListener(new View.OnClickListener() {
             @Override
