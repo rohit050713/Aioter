@@ -111,7 +111,7 @@ public class ScanDevices extends AppCompatActivity {
 
     private void dialog() {
         final Dialog dialog = new Dialog(ScanDevices.this);
-        dialog.setContentView(R.layout.dialog_devicepin_screen);
+        dialog.setContentView(R.layout.dialog_device_item_login);
         dialog.setCancelable(false);
         final TextView errortvPin = dialog.findViewById(R.id.errortvDevicePin);
 
@@ -130,12 +130,12 @@ public class ScanDevices extends AppCompatActivity {
                 String pin = editTextDevicePin.getText().toString().trim();
                 if (pin.length() < 1) {
                     errortvPin.setVisibility(View.VISIBLE);
-                    errortvPin.setText("*Please enter device pin.");
+                    errortvPin.setText("*Please enter a device pin.");
 
 
                 } else if (pin.length() < 6) {
                     errortvPin.setVisibility(View.VISIBLE);
-                    errortvPin.setText("*Please enter valid device pin.");
+                    errortvPin.setText("*Please enter a valid device pin.");
 
 
                 } else if (Pattern.compile("123456").matcher(pin).matches()) {

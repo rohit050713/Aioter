@@ -13,22 +13,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_12sdp"
-            android:background="#393737"
+            android:background="@color/dialog_bg"
             android:layout_marginTop="@dimen/_4sdp"
 
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#282525"
+
+                  android:layout_height="wrap_content"
+                android:background="@color/dialog_header"
                 android:fontFamily="@font/bauhausregular"
                 android:gravity="center"
                 android:paddingTop="@dimen/_12sdp"
                 android:paddingBottom="@dimen/_10sdp"
-                android:text="Device Pin"
-                android:textColor="#fff"
-                android:textSize="16sp"
+                android:text="@string/item_device_pin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
                 android:textStyle="bold" />
 
             <EditText
@@ -40,16 +41,17 @@
                 android:layout_marginRight="@dimen/_24sdp"
                 android:maxLength="6"
                 android:layout_marginBottom="@dimen/_40sdp"
-                android:background="@drawable/edittextbg"
+                android:background="@drawable/curveedittext_bg"
                 android:digits="0123456789"
                 android:fontFamily="@font/bauhausregular"
-                android:hint="Enter Device Pin"
+                android:hint="@string/enter_device_pin"
                 android:inputType="number"
                 android:padding="@dimen/_12sdp"
                 android:singleLine="true"
-                android:textColor="#fff"
-                android:textColorHint="#646363"
-                android:textSize="18sp" />
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_15ssp"
+                />
 
             <TextView
                 android:id="@+id/errortvDevicePin"
@@ -57,18 +59,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_minus36sdp"
                 android:layout_marginBottom="@dimen/_40sdp"
-                android:layout_marginLeft="@dimen/_24sdp"
-                android:text="*Please enter a valid device pin."
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:text="@string/please_enter_valid"
+                android:textSize="@dimen/_10ssp"
                 android:textColor="@color/colorAccent"
                 android:visibility="gone" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/ivClose"
+            android:id="@+id/device_pin_close"
             android:layout_width="@dimen/_26sdp"
             android:layout_height="@dimen/_26sdp"
             android:layout_gravity="right|top"
-            android:layout_margin="@dimen/_8sdp"
+            android:layout_margin="@dimen/_6sdp"
             android:src="@drawable/invalid_name" />
 
 

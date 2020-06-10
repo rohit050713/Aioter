@@ -30,7 +30,7 @@
     <color name="myprofile_toolbar">#252424</color>
     <color name="myprofile_bg">#191818</color>
      <color name="selected">#f47733</color>
-
+      <color name="hint_color">#646363</color>
 
     <array name="array_dot_active">
         <item>@color/colorActiveDot1</item>
@@ -43,5 +43,6 @@
         <item>@color/colorInactiveDot2</item>
         <item>@color/colorInactiveDot3</item>
     </array>
+
 
 </resources>

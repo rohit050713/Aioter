@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_item"
     android:orientation="horizontal"
     android:layout_margin="@dimen/_5sdp"
     android:background="@mipmap/rectangle_1_copy_12"

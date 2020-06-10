@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/spinner_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_27sdp"
+        android:text="Month"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bauhausregular"
+        android:textSize="@dimen/_10ssp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:gravity="center"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:background="@drawable/spinner_border"
+        android:layout_gravity="center"
+
+
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_27sdp"
+        android:src="@drawable/dropdown_arrow"
+        android:background="@drawable/spinner_arrow_border"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+
+
+        />
+
+
+</LinearLayout>

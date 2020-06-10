@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="@color/dialog_bg"
+            android:layout_marginTop="@dimen/_4sdp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@color/dialog_header"
+                android:fontFamily="@font/bauhausregular"
+                android:gravity="center"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/add_home_header"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et1_addhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:maxLength="20"
+                android:background="@drawable/curveedittext_bg"
+                android:fontFamily="@font/bauhausregular"
+                android:hint="@string/add_home_et1"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_15ssp"
+                />
+
+            <TextView
+                android:id="@+id/errortv1_addhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:text="@string/add_home_tv1"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+            <EditText
+                android:id="@+id/et2_addhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:maxLength="20"
+                android:background="@drawable/curveedittext_bg"
+                android:fontFamily="@font/bauhausregular"
+                android:hint="@string/add_home_et2"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_15ssp"
+                />
+
+            <TextView
+                android:id="@+id/errortv2_addhome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:text="@string/add_home_tv2"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/colorAccent"
+                android:visibility="gone" />
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_24sdp"
+                android:layout_marginRight="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                map:uiScrollGestures="true"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+
+            />
+            <Button
+                android:id="@+id/btn_addhome_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/button_bg"
+                android:text="@string/Continue"
+                android:textColor="@color/white"
+                android:fontFamily="@font/baumans"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</FrameLayout>

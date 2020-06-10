@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myprofile_bg"
+    android:orientation="vertical"
+    tools:context=".activity.DeviceSwitchDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/edit_switch_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDark"
+        android:theme="?attr/actionBarTheme"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/edit_switch_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                />
+            <TextView
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/_20sdp"
+                android:text="Edit Switch"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/bauhausregular"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@color/myprofile_bg"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingStart="@dimen/_5sdp">
+        <LinearLayout
+            android:id="@+id/bulb_icon"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/bulb_icon_white"
+            android:padding="@dimen/_5sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/bulb_icon_white"
+                android:padding="@dimen/_5sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/bulb_icon_white"
+                android:padding="@dimen/_5sdp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/bulb_text"
+            android:padding="@dimen/_8sdp"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="Bulb 1"
+            android:layout_toRightOf="@+id/bulb_icon"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_edittext_background"
+            android:textStyle="bold"
+            android:fontFamily="@font/bauhausregular"
+            android:elevation="@dimen/_5sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/bulb_icon"
+            android:text="Switch 1"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:fontFamily="@font/bauhausregular"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_15ssp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_edit_switch_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:background="@drawable/white_button"
+        android:layout_marginTop="@dimen/_250sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/bauhausregular"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>

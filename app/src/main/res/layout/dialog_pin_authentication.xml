@@ -46,13 +46,16 @@
             android:textSize="@dimen/_15ssp"
             />
         <EditText
-            android:id="@+id/et_user_email"
+            android:id="@+id/et_pin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/curveedittext_bg"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:layout_gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="10"
             android:padding="@dimen/_12sdp"
             android:hint="@string/device_pin"
             android:fontFamily="@font/bauhausregular"
@@ -81,8 +84,10 @@
             android:layout_weight="1"
             android:gravity="center"
             android:paddingLeft="@dimen/_5sdp"
+            android:visibility="invisible"
           />
             <TextView
+                android:id="@+id/forgot_pinauthentication"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/forgot_pin"
@@ -108,7 +113,7 @@
 
             >
             <Button
-                android:id="@+id/btn_user_cancel"
+                android:id="@+id/btn_pinauthentication_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_bg"
@@ -126,7 +131,7 @@
 
                 />
             <Button
-                android:id="@+id/btn_user_proceed"
+                android:id="@+id/btn_pinauthentication_ok"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -135,7 +140,7 @@
                 android:layout_gravity="end"
                  android:layout_weight="1"
                 android:gravity="center"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorActiveDot1"
                 android:padding="@dimen/_5sdp"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_15ssp"
@@ -154,7 +159,7 @@
         android:layout_width="@dimen/_26sdp"
         android:layout_height="@dimen/_26sdp"
         android:layout_gravity="right|top"
-        android:layout_margin="@dimen/_8sdp"
+        android:layout_margin="@dimen/_6sdp"
         android:src="@drawable/invalid_name" />
     </FrameLayout>
 </FrameLayout>

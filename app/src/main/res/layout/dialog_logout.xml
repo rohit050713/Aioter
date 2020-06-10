@@ -83,7 +83,7 @@
                     android:layout_gravity="end"
 
                     android:gravity="center"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/colorActiveDot1"
                     android:padding="@dimen/_5sdp"
                     android:textAllCaps="false"
                     android:textSize="@dimen/_15ssp"
@@ -102,7 +102,7 @@
             android:layout_width="@dimen/_26sdp"
             android:layout_height="@dimen/_26sdp"
             android:layout_gravity="right|top"
-            android:layout_margin="@dimen/_8sdp"
+            android:layout_margin="@dimen/_6sdp"
             android:src="@drawable/invalid_name" />
 
 

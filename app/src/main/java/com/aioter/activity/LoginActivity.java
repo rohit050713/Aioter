@@ -32,27 +32,15 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void submit(View view){
-        Intent i=new Intent(this,myprofile.class);
+        Intent i=new Intent(this,TutorialActivity.class);
         startActivity(i);
     }
 
 
 public void google(View view){
-    final Dialog dialog=new Dialog(LoginActivity.this);
-    dialog.setContentView(R.layout.dialog_user_authentication);
-    dialog.setCancelable(false);
-
-    ImageView imageView1= dialog.findViewById(R.id.user_authentication_close);
-    imageView1.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            dialog.dismiss();
-        }
-    });
-    if(dialog.getWindow()!=null) {
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-    }
-    dialog.show();
+    Intent intent = new Intent(LoginActivity.this, TutorialActivity.class);
+    startActivity(intent);
+    finish();
 }
 
 }

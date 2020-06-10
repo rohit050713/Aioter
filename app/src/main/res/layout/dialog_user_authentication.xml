@@ -47,11 +47,13 @@
             android:layout_width="@dimen/_220sdp"
             android:layout_height="wrap_content"
             android:background="@drawable/curveedittext_bg"
-
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
             android:layout_gravity="center"
             android:padding="@dimen/_12sdp"
             android:hint="@string/enter_email"
             android:fontFamily="@font/bauhausregular"
+            android:maxLength="25"
             android:textSize="@dimen/_15ssp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             />
@@ -66,7 +68,9 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:text="@string/email_validation"
             android:textSize="@dimen/_10sdp"
-            android:textColor="@color/selected"/>
+            android:textColor="@color/selected"
+            android:visibility="invisible"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
@@ -81,7 +85,7 @@
 
             >
             <Button
-                android:id="@+id/btn_user_cancel"
+                android:id="@+id/btn_userauthentication_cancel"
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
                 android:background="@drawable/button_bg"
@@ -99,7 +103,7 @@ android:layout_weight="1"
 
                 />
             <Button
-                android:id="@+id/btn_user_proceed"
+                android:id="@+id/btn_userauthentication_proceed"
 
                 android:layout_width="@dimen/_95sdp"
                 android:layout_height="@dimen/_40sdp"
@@ -108,7 +112,7 @@ android:layout_weight="1"
                 android:layout_gravity="end"
 android:layout_weight="1"
                 android:gravity="center"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorActiveDot1"
                 android:padding="@dimen/_5sdp"
                 android:textAllCaps="false"
                 android:textSize="@dimen/_15ssp"
@@ -127,7 +131,7 @@ android:layout_weight="1"
         android:layout_width="@dimen/_26sdp"
         android:layout_height="@dimen/_26sdp"
         android:layout_gravity="right|top"
-        android:layout_margin="@dimen/_8sdp"
+        android:layout_margin="@dimen/_6sdp"
         android:src="@drawable/invalid_name" />
     </FrameLayout>
 </FrameLayout>

@@ -52,7 +52,7 @@
 
 
                 <Button
-                    android:id="@+id/okpinsucess"
+                    android:id="@+id/btn_successpin_okay"
                     android:layout_width="@dimen/_95sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:layout_gravity="center"
@@ -76,7 +76,7 @@
             android:id="@+id/successfully_changed_pin_close"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
-
+            android:layout_margin="@dimen/_6sdp"
             android:layout_gravity="right|end"
             android:src="@drawable/invalid_name" />
         </FrameLayout>

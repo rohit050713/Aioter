@@ -46,6 +46,7 @@ public class SwitchedOnFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(customRecyclerAdapter);
 
+
 //        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(view.getContext(),   recyclerView, new RecyclerTouchListener.ClickListener() {
 //            @Override
 //            public void onClick(View view, int position) {

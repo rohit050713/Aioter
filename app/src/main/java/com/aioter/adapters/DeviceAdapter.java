@@ -35,7 +35,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.DeviceView
 
           DeviceViewHolder dholder = new DeviceViewHolder(view);
           myDialog = new Dialog(mContext);
-          myDialog.setContentView(R.layout.dialog_devicepin_screen);
+          myDialog.setContentView(R.layout.dialog_device_item_login);
           dholder.contact_item.setOnClickListener(new View.OnClickListener() {
                @Override
                public void onClick(View v) {
